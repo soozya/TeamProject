@@ -244,15 +244,8 @@ $(document).ready(function() {
 	  </div>
 	</div> <!-- panel -->
    </div><!-- contents -->
-	  
-	  
-  <footer class="footer"> <!-- footer구역 -->
-	<div class="footerdiv" >
-	  공간의 집 | KIC | 012-345-6789 | 주소 : 서울특별시 강남구<p>
-	  사업자번호 011-22-345678 | ourhome@aaa.com <p>			
-	</div>
-  </footer>
 
+<jsp:include page="../footer.jsp" />
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="/Zspace/js/bootstrap.min.js"></script>

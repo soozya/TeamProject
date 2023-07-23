@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 
+
 public class QNAboardDAO {
 
   private DBConnectionMgr pool=null; //(DBConnectionMgr)에 접근하기 위해

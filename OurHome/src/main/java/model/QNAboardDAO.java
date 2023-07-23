@@ -15,6 +15,7 @@ public class QNAboardDAO {
   private ResultSet rs=null; //select
   private String sql=""; //실행시킬 SQL구문 저장 목적
 
+
   //생성자 만들기
   public QNAboardDAO() {
 	try {

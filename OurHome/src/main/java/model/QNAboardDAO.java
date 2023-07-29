@@ -206,6 +206,7 @@ public class QNAboardDAO {
  	  }
  	}
 
+
 	//6. 글 상세보기
 	public QNAboardDTO getArticle (int post_num) {
 	  QNAboardDTO article=null;

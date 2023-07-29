@@ -169,7 +169,7 @@ public class QNAboardDAO {
   // 4.게시판의 글쓰기
  	public void insertArticle (QNAboardDTO article) {
  	  int post_view=0;
-       int post_num=article.getPost_num();
+      int post_num=article.getPost_num();
 
  	  int number=0;// 데이터 저장을 위한 게시물 번호
  	  System.out.println("insertArticle 메서드의 내부 호출");
@@ -179,7 +179,7 @@ public class QNAboardDAO {
  		sql="select max(post_num) from qna_post";
  		pstmt=con.prepareStatement(sql);
  		rs=pstmt.executeQuery();
- 		//1) 신규글 일 때
+
  		if (rs.next()) { // 기존 레코드 데이터가 있으면
  			number=rs.getInt(1)+1; //number(0)+1
  		}else { //기존 데이터가 없는 경우 1부터 시작한다는 뜻
@@ -188,7 +188,7 @@ public class QNAboardDAO {
  		//article.setPost_num(number); 논리적 오류
 
  	    sql="insert into qna_post(post_num, mem_id, admin_id, post_title, post_cnt,";
- 	    sql+=" post_date, reply_cnt, reply_date, post_view) values(?,?,?,?,?,?,?,?,?)";
+ 	    sql+=" post_date, post_view) values(?,?,?,?,?,?,?)";
  		pstmt=con.prepareStatement(sql);
  	    pstmt.setInt(1, number);
  	    pstmt.setString(2, article.getMem_id());
@@ -196,9 +196,7 @@ public class QNAboardDAO {
  	    pstmt.setString(4, article.getPost_title());
  	    pstmt.setString(5, article.getPost_cnt());
  	    pstmt.setTimestamp(6, article.getPost_date());
- 	    pstmt.setString(7, article.getReply_cnt());
- 	    pstmt.setTimestamp(8, article.getReply_date());
- 	    pstmt.setInt(9, post_view);
+ 	    pstmt.setInt(7, post_view);
  	    int insert=pstmt.executeUpdate();
  	    System.out.println("게시판 글쓰기 성공 확인: "+insert);
  	  }catch(Exception e) {

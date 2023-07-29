@@ -18,7 +18,6 @@ public class QNAWriteProAction implements CommandAction {
 	  QNAboardDTO article=new QNAboardDTO();
 	  System.out.println("디버깅중");
 
-
 	  System.out.println("request.getParameter(\"post_num\")=>"+request.getParameter("post_num"));
 	  System.out.println("request.getParameter(\"mem_id\")=>"+request.getParameter("mem_id"));
 	  System.out.println("request.getParameter(\"post_title\")=>"+request.getParameter("post_title"));

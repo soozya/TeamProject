@@ -9,6 +9,7 @@ public class QNAWriteFormAction implements CommandAction {
 	public String requestPro(HttpServletRequest request, HttpServletResponse response) throws Throwable {
 		// TODO Auto-generated method stub
 
+
 	  //1. writeForm.jsp에 수행했던 자바코드
 	  //list.jsp(글쓰기) : 신규글
 		int post_num=0;

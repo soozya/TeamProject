@@ -29,7 +29,6 @@ public class QNAWriteProAction implements CommandAction {
 	  article.setPost_cnt(request.getParameter("post_cnt")); //글내용
 	  article.setPost_date(new Timestamp(System.currentTimeMillis()));
 
-
 	  //DTO저장 끝
 	  QNAboardDAO dbPro=new QNAboardDAO();
 	  dbPro.insertArticle(article);

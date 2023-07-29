@@ -169,8 +169,6 @@ public class QNAboardDAO {
   // 4.게시판의 글쓰기
  	public void insertArticle (QNAboardDTO article) {
  	  int post_view=0;
-      int post_num=article.getPost_num();
-
  	  int number=0;// 데이터 저장을 위한 게시물 번호
  	  System.out.println("insertArticle 메서드의 내부 호출");
 

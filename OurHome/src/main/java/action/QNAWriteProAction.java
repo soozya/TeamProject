@@ -36,5 +36,6 @@ public class QNAWriteProAction implements CommandAction {
 
 	return "/QNAwritepro.jsp";
 
+
 	}
 }

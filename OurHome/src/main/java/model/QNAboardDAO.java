@@ -308,7 +308,6 @@ public class QNAboardDAO {
         return x;
 	}
 
-
 	//10. 글 검색하기 : 검색어에 따른 레코드의 범위 지정에 대한 메서드
 	public List getBoardArticles(int start,int end, String search, String searchtext) {
 		ArrayList<QNAboardDTO> articleList=null; //ArrayList<BoardDTO> articleList=null (o)

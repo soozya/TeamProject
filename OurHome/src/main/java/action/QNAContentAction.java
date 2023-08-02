@@ -16,7 +16,6 @@ public class QNAContentAction implements CommandAction {
 		//1.content.jsp에서 처리한 자바코드
 		  int post_num=Integer.parseInt(request.getParameter("post_num"));
 		  String pageNum=request.getParameter("pageNum");
-		  //String post_title=request.getParameter("post_title");
 		  System.out.println("ContentAction의 pageNum="+pageNum+", post_num="+post_num);
 
 		  QNAboardDAO dbPro=new QNAboardDAO();
@@ -25,7 +24,6 @@ public class QNAContentAction implements CommandAction {
 		  //2. 처리한 결과를 서버의 메모리에 저장(request)-> jsp에서${키명}
 		  request.setAttribute("post_num", post_num); //${num}을 주기 위해 key, value 똑같이
 		  request.setAttribute("pageNum", pageNum); // ${pageNum}
-		  //request.setAttribute("post_title",post_title);
 		  request.setAttribute("article",article);
 
 		  return "/QNApostview.jsp";

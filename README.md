@@ -1,6 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=Soft&color=D5E8B5&height=150&section=header&text=팀프로젝트-인테리어%20쇼핑몰%20[공간의%20집]&fontSize=25&fontColor=5377A1" />
 
 [![Tistory's Badge](https://github-readme-tistory-card.vercel.app/api/badge?name=Tistory)](https://soozya.tistory.com/)
+![OurHome](https://github.com/soozya/TeamProject/assets/122772589/f4e682cc-b860-4a03-b035-d12a3ca7e90a)
 ### ✨ SUBJECT
   집에 머무르는 시간이 증가함에 따라 취향에 맞는 소품을 활용한 홈스타일링을 통해 삶의 질과 만족도가 증가할 것을 기대하며 ‘인테리어 소품 쇼핑몰’을 제작하고자 하였습니다.<br>
 ◾ <b>컨셉</b> - 따뜻한 느낌을 주고자 베이지 색을 메인으로 사용하였으며, 메인화면에 이미지를 띄우기로 하였습니다.<br>
